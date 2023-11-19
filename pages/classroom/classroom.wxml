@@ -1,0 +1,31 @@
+<navigation-bar title="发布教室" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<van-cell-group>
+	<van-field model:value="{{ classroomname }}" clearable label="教室名称" placeholder="请输入教室名称" />
+	<van-field model:value="{{ classroomtype }}" label="教室类型" placeholder="请输入教室类型"  />
+	<van-field model:value="{{ campus }}" label="校区" placeholder="请输入校区"  />
+	<van-field model:value="{{ capacity }}" label="容量" placeholder="请输入容量"  />
+	<van-field model:value="{{ device }}" label="设备" placeholder="请输入设备"  />
+	
+
+</van-cell-group>
+
+<van-datetime-picker
+  type="datetime"
+  value="{{ mystarttime }}"
+  min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"
+  title="开始时间"
+  bind:input="onInput1"
+/>
+
+<van-datetime-picker
+  type="datetime"
+  value="{{ myendtime }}"
+  min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"
+  title="结束时间"
+  bind:input="onInput2"
+/>
+
+
+<van-button type="primary" bindtap="publish" class="center">发布教室</van-button>

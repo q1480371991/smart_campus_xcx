@@ -1,0 +1,12 @@
+<navigation-bar title="课程日历表" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view>
+	<van-calendar show-title="{{ false }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:select="onSelectDate" poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" color="#07c160"/>
+
+</view>
+<scroll-view class="scrollarea" scroll-y type="list">
+	<van-cell-group>
+		<van-cell title="数据结构" value="10：40 —— 11：10" label="5102"/>
+		<van-cell title="算法设计" value="10：40 —— 11：10" label="5103" border="{{ false }}" />
+	</van-cell-group>
+	
+</scroll-view>

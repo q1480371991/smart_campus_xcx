@@ -1,0 +1,44 @@
+<navigation-bar title="教室预约" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="content">
+	<van-button type="info" plain class="" class="button1,content1" block custom-style="fontcolor" bind:click="click1">预约开始时间</van-button>
+	<van-popup show="{{ show1 }}" bind:close="onClose1" position="bottom">
+		<van-datetime-picker type="datetime" value="{{ mystarttime }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" title="开始时间"  bind:confirm="onInput1" bind:cancel="onClose1" />
+	</van-popup>
+	<van-button type="info" plain class="" class="button1,content1" block custom-style="fontcolor" bind:click="click2">预约结束时间</van-button>
+	<van-popup show="{{ show2 }}" bind:close="onClose2" position="bottom">
+		<van-datetime-picker type="datetime" value="{{ myendtime }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" title="结束时间"  bind:confirm="onInput2" bind:cancel="onClose2" />
+	</van-popup>
+</view>
+<view class="content">
+	<view class="content1">
+		{{starttime}}
+	</view>
+	<view class="content1">
+		{{endtime}}
+	</view>
+</view>
+<scroll-view class="scrollarea" scroll-y type="list">
+	<view class="box">
+		<view class="title">5110</view>
+		<view class="content">
+			<view class="item">花江校区</view>
+			<view class="item">5教</view>
+			<view class="item">容纳30人</view>
+		</view>
+		<van-button type="info" class="center" class="button" block color="#cecece" custom-style="fontcolor">电子屏，投影</van-button>
+		<van-button type="info" bindtap="reserve" class="center" class="button" block>发布教室</van-button>
+
+
+	</view>
+	<view class="box">
+		<view class="title">5110</view>
+		<view class="content">
+			<view class="item">花江校区</view>
+			<view class="item">5教</view>
+			<view class="item">容纳30人</view>
+		</view>
+		<van-button type="info" class="center" class="button" block color="#cecece" custom-style="fontcolor">电子屏，投影</van-button>
+		<van-button type="info" bindtap="reserve" class="center" class="button" block>发布教室</van-button>
+	</view>
+</scroll-view>

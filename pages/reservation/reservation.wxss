@@ -1,0 +1,56 @@
+.scrollarea {
+	flex: 1;
+	overflow-y: hidden;
+}
+
+.box {
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 80%;
+	/* background-color: aqua; */
+	margin-top: 10px;
+	border: 2px solid;
+	/* 边框宽度为 2px，实线 */
+	border-color: #cecece;
+	/* 边框颜色为红色 */
+
+}
+.button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.button1 {
+	display: flex;
+	justify-content: center;
+}
+.title {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+.content1 {
+	margin: auto;
+	display:flex;
+	justify-content: space-between;
+}
+
+.item {
+	flex: 1;
+	/* 设置子元素均分空间 */
+	text-align: center;
+	/* 文字居中显示 */
+}
+.fontcolor{
+	color:#898989
+}

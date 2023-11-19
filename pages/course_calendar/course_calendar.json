@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+  "navigation-bar": "/components/navigation-bar/navigation-bar",
+  "van-calendar": "@vant/weapp/calendar/index",
+  "van-panel": "@vant/weapp/panel/index"
+  
+  }
+}

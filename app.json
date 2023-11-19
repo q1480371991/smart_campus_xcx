@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/course_calendar/course_calendar",
+    "pages/reservation/reservation",
+    "pages/classroom/classroom"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+		"van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+		"van-dropdown-item": "@vant/weapp/dropdown-item/index",
+		"navigation-bar": "/components/navigation-bar/navigation-bar",
+		"van-field": "@vant/weapp/field/index",
+		"van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+		"van-cell-group": "@vant/weapp/cell-group/index",
+		"van-popup": "@vant/weapp/popup/index"
+  }
+}
