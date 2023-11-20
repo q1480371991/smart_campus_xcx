@@ -11,10 +11,14 @@
           <text class="nickname-label">昵称</text>
           <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
         </view>
-		<view class="nickname-wrapper">
+        <view class="nickname-wrapper">
           <button bindtap="toclass">课程表</button>
           <button bindtap="toclassroom">发布教室</button>
           <button bindtap="toreservation">教室预约</button>
+          
+        </view>
+        <view class="nickname-wrapper">
+          <button bindtap="tojudge">审核预约</button>
         </view>
       </block>
       <block wx:elif="{{!hasUserInfo}}">

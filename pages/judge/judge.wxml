@@ -1,0 +1,120 @@
+<navigation-bar title="审核预约" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<van-tabs active="{{ active }}" bind:change="onChange" animated color="#1989fa">
+	<van-tab title="未审批">
+		<scroll-view class="scrollarea" scroll-y type="list">
+			<view class="box">
+				<view class="content">
+					<view class="item title">5110</view>
+				</view>
+				<view class="content">
+					<view class="item1">张铭</view>
+					<view class="item1">类型:5教</view>
+				</view>
+				<view class="content">
+					<view>时间：2023-11-17 20:00—2023-11-17 22:00</view>
+				</view>
+				<view class="content">
+					容量：30人
+				</view>
+				<view class="content">
+					理由：用于204班点名
+				</view>
+				<van-divider />
+				<view class="content">
+					<view class="button1">
+						<van-button type="primary" bind:click="pass" custom-style="fontcolor">通过</van-button>
+					</view>
+					<view class="button1">
+						<van-button type="danger" bind:click="reject" custom-style="fontcolor">拒绝</van-button>
+					</view>
+				</view>
+
+
+			</view>
+
+			<view class="box">
+				<view class="content">
+					<view class="item title">5102</view>
+				</view>
+				<view class="content">
+					<view class="item1">张三</view>
+					<view class="item1">类型:5教</view>
+				</view>
+				<view class="content">
+					<view>时间：2023-11-17 20:00—2023-11-17 22:00</view>
+				</view>
+				<view class="content">
+					容量：30人
+				</view>
+				<view class="content">
+					理由：用于201班点名
+				</view>
+				<van-divider />
+				<view class="content">
+					<view class="button1">
+						<van-button type="primary" bind:click="pass" custom-style="fontcolor">通过</van-button>
+					</view>
+					<view class="button1">
+						<van-button type="danger" bind:click="reject" custom-style="fontcolor">拒绝</van-button>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</van-tab>
+	<van-tab title="已审批">
+		<scroll-view class="scrollarea" scroll-y type="list">
+			<view class="box">
+				<view class="content">
+					<view class="item title">5110</view>
+				</view>
+				<view class="content">
+					<view class="item1">张铭</view>
+					<view class="item1">类型:5教</view>
+				</view>
+				<view class="content">
+					<view>时间：2023-11-17 20:00—2023-11-17 22:00</view>
+				</view>
+				<view class="content">
+					容量：30人
+				</view>
+				<view class="content">
+					理由：用于204班点名
+				</view>
+				<van-divider />
+				<view class="content">
+					<view class="button1">
+						<van-button type="primary"  class="button" block color="#cecece" custom-style="fontcolor">通过</van-button>
+					</view>
+					
+				</view>
+
+
+			</view>
+
+			<view class="box">
+				<view class="content">
+					<view class="item title">5102</view>
+				</view>
+				<view class="content">
+					<view class="item1">张三</view>
+					<view class="item1">类型:5教</view>
+				</view>
+				<view class="content">
+					<view>时间：2023-11-17 20:00—2023-11-17 22:00</view>
+				</view>
+				<view class="content">
+					容量：30人
+				</view>
+				<view class="content">
+					理由：用于201班点名
+				</view>
+				<van-divider />
+				<view class="content">
+					<view class="button1">
+						<van-button type="primary"  class="button" block color="#cecece" custom-style="fontcolor">拒绝</van-button>
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</van-tab>
+</van-tabs>

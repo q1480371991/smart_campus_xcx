@@ -27,7 +27,7 @@
 			<view class="item">容纳30人</view>
 		</view>
 		<van-button type="info" class="center" class="button" block color="#cecece" custom-style="fontcolor">电子屏，投影</van-button>
-		<van-button type="info" bindtap="reserve" class="center" class="button" block>发布教室</van-button>
+		<van-button type="info" bindtap="reserve" class="center" class="button" block>预约</van-button>
 
 
 	</view>
@@ -39,6 +39,6 @@
 			<view class="item">容纳30人</view>
 		</view>
 		<van-button type="info" class="center" class="button" block color="#cecece" custom-style="fontcolor">电子屏，投影</van-button>
-		<van-button type="info" bindtap="reserve" class="center" class="button" block>发布教室</van-button>
+		<van-button type="info" bindtap="reserve" class="center" class="button" block>预约</van-button>
 	</view>
 </scroll-view>

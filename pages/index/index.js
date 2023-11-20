@@ -60,7 +60,13 @@ Component({
     },
     toclassroom:function(){
 		  wx.navigateTo({
+        
 		    url:'../classroom/classroom',
+		  })
+    },
+    tojudge:function(){
+		  wx.navigateTo({
+		    url:'../judge/judge',
 		  })
     },
   
